@@ -1,0 +1,389 @@
+\documentclass[utf8x,helvetica,narrow,romanian,logo,totpages]{europecv}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[romanian]{babel}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=1.27cm,bmargin=2cm,lmargin=1cm,rmargin=77pt}
+\usepackage{microtype}
+\usepackage{combelow}%for diacritics
+\usepackage{enumitem}%to set enumerate style 1. 1.4.
+\usepackage{array}%for tables, vertical align: middle
+\usepackage{amssymb}%for mathbb
+
+\renewcommand{\ttdefault}{phv}
+
+% PDF Properties
+\hypersetup{
+	colorlinks=true,%coloreaza scrisul linkurilor sau lasa bordura
+%	pdfborder={0 0 0},% scoate bordura rosie din jurul linkurilor
+	unicode=true,
+	pdfstartview={FitH},
+	pdftitle={Curriculum Vitae Tancredi-Paul Grozav},
+	pdfauthor={Tancredi-Paul Grozav},
+	pdfsubject={Curriculum Vitae},
+	pdfkeywords={curriculum vitae} {cv} {curriculum} {vitae} {grozav} {tancredi} {paul} {tancredi paul} {tancredi-paul},
+    citecolor=red,
+    filecolor=yellow,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+% Personal Info 
+\ecvname{Tancredi-Paul Grozav}
+\ecvnationality{Rom\^{a}n\u{a}}
+\ecvaddress{Bld. G-ral Vasile Milea, nr.17, ap.6, jud. Arad, loc. Arad, cod po\cb{s}tal 310131}
+\ecvtelephone{Mobil: +40 771 179 512}
+\ecvemail{\href{mailto:paul@grozav.info}{paul@grozav.info}}
+\ecvdateofbirth{11.06.1991}
+\ecvgender{Masculin}
+\ecvpicture[width=90px]{eu.jpg}
+\ecvbeforepicture{\ecvspace{-2.7cm}\centering}
+\ecvafterpicture{\ecvspace{-1.5cm}}
+
+\makeatletter
+
+%===========================================
+% Changes to personal info constant labels
+%===========================================
+\def\ecv@infosectionkey{\ecv@utf{Informa\cb{t}ii personale}}
+\def\ecv@namekey{\ecv@utf{Prenume \cb{s}i nume}}
+\def\ecv@addresskey{\ecv@utf{Adres\u{a}(e)}}
+\def\ecv@telkey{\ecv@utf{Telefon(oane)}}
+%\def\ecv@mobilekey{\ecv@utf{Mobil}}
+\def\ecv@emailkey{\ecv@utf{E-mail(uri)}}
+\def\ecv@nationalitykey{\ecv@utf{Na\cb{t}ionalitate(-t\u{a}\cb{t}i)}}
+\def\ecv@birthkey{\ecv@utf{Data na\cb{s}terii}}
+\def\ecv@genderkey{\ecv@utf{Sex}}
+
+%===========================================
+% Changes to spoken language table
+%===========================================
+% Language table
+\def\ecv@mothertonguekey{\ecv@utf{Limba(i) matern{\u a}(e)}}
+\def\ecv@assesskey{\ecv@utf{Autoevaluare}}
+\def\ecv@levelkey{\ecv@utf{Nivel european}}
+\def\ecv@understandkey{\ecv@utf{\^{I}n\cb{t}elegere}}
+\def\ecv@speakkey{\ecv@utf{Vorbire}}
+\def\ecv@writekey{\ecv@utf{Scriere}}
+\def\ecv@listenkey{\ecv@utf{Ascultare}}
+\def\ecv@readkey{\ecv@utf{Citire}}
+\def\ecv@interactkey{\ecv@utf{Participare la conversa\cb{t}ie}}
+\def\ecv@productkey{\ecv@utf{Discurs oral}}
+\def\ecv@langfooterkey{\ecv@utf{Cadrul European Comun de Referin\cb{t}\u{a} pentru Limbi Str\u{a}ine}}
+\def\ecv@cefbasickey{\ecv@utf{Utilizator elementar}}
+\def\ecv@cefindepkey{\ecv@utf{Utilizator independent}}
+\def\ecv@cefprofkey{\ecv@utf{Utilizator experimentat}}
+   
+\makeatother
+
+\newcommand{\ROQuotes}[1]{„#1”}%http://ro.wikipedia.org/wiki/Ghilimele - forma standard a ghilimelelor folosite în limba română este „...” (99 jos, 99 sus) despre care Academia Română afirmă că este singura formă admisă
+\newcommand{\ecvitemspace}{\ecvitem{}{}}
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[romanian]{babel}
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=1.27cm,bmargin=2cm,lmargin=1cm,rmargin=77pt}
+\usepackage{microtype}
+\usepackage{combelow}%for diacritics
+\usepackage{enumitem}%to set enumerate style 1. 1.4.
+\usepackage{array}%for tables, vertical align: middle
+\usepackage{amssymb}%for mathbb
+
+\begin{document}
+\begin{europecv}
+ 
+% prints the personal info, defined in the preamble
+\ecvpersonalinfo
+\ecvitemspace
+\ecvitem{Website}{\url{http://paul.grozav.info}}
+
+%==================================
+% EDUCATIE SI FORMARE
+%==================================
+\ecvsection{Educa\cb{t}ie \cb{s}i formare}
+\ecvitem{Perioada}{2009 $\to$ 2012}
+\ecvitem{Titlul / diploma ob\cb{t}inut\u{a}}{Matematician / diplom\u{a} de licen\cb{t}\u{a}}
+\ecvitem{Numele institu\cb{t}iei de \^{i}nv\u{a}\cb{t}\u{a}m\^{a}nt}{Universitatea \ROQuotes{Aurel Vlaicu} din Arad}
+\ecvitem{}{Facultatea de \cb{S}tiin\cb{t}e Exacte, specializarea Matematic\u{a}-Informatic\u{a}}
+%\ecvitemspace
+\ecvitem{Discipline principale studiate / competen\cb{t}e profesionale dob\^{a}ndite}{
+\begin{tabular}{| >{\centering\arraybackslash}p{5cm} | >{\centering\arraybackslash}p{5cm} |}
+    \hline
+    \textbf{Informatic\u{a}} & \textbf{Matematic\u{a}} \\ \hline
+	\vspace{-0.25cm}
+	\begin{itemize}[label={--}]
+		\item Arhitectura calculatoarelor
+		\item Structuri de date
+		\item Sisteme de operare
+		\item Algoritmi \cb{s}i programare
+		\item Re\cb{t}ele de calculatoare
+		\item Programare orientat\u{a} pe obiecte
+		\item Baze de date
+		\item Tehnologii web
+	\end{itemize}
+	&
+	\vspace{-0.25cm}
+	\begin{itemize}[label={--}]
+		\item Analiz\u{a} matematic\u{a} pe $\mathbb{R}^n$
+		\item Analiz\u{a} func\cb{t}ional\u{a}
+		\item Analiz\u{a} complex\u{a}
+		\item Ecua\cb{t}ii cu derivate par\cb{t}iale
+		\item Geometrie diferen\cb{t}ial\u{a}
+		\item Statistic\u{a} matematic\u{a}
+		\item Spa\cb{t}ii liniare topologice
+		\item Sisteme dinamice
+	\end{itemize}
+	\\ \hline
+\end{tabular}
+}
+\ecvitem{Media notelor de peste ani}{9,82 (nou\u{a}, opt zeci \cb{s}i doi) }
+\ecvitem{Nota examenului de licen\cb{t}\u{a}}{10 (zece)}
+
+%=======================================
+% APTITUDINI SI COMPETENTE PERSONALE
+%=======================================
+\ecvsection{Aptitudini \cb{s}i competen\cb{t}e personale}
+\ecvmothertongue[10pt]{Rom\^{a}n\u{a}}
+\ecvitem{Limb\u{a}(i) str\u{a}in\u{a}(e) cunoscute}{}
+\ecvlanguageheader{(*)}
+\ecvlanguage{Limba englez\u{a}}{\ecvCOne}{\ecvCOne}{\ecvBTwo}{\ecvCOne}{\ecvBTwo}
+\ecvlanguage{Limba francez\u{a}}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}
+\ecvlanguagefooter{(*)}
+
+%=======================================
+% COMPETENTE SI EXPERIENTE PROFESIONALE
+%=======================================
+\ecvsection{Competen\cb{t}e \cb{s}i experien\cb{t}e profesionale}
+\ecvitem{}{Fiec\u{a}rei competen\cb{t}e i se acord\u{a} o not\u{a} \^{i}ntre 1 \cb{s}i 10. 1 \^{i}nseamn\u{a} o cunoa\cb{s}tere de suprafa\cb{t}\u{a}, cu experien\cb{t}\u{a} minim\u{a}, iar 10 \^{i}nseamn\u{a} o cunoa\cb{s}tere profund\u{a}, cu experient\u{a} serioas\u{a}
+\vspace{0.3cm}
+
+\renewcommand{\arraystretch}{1.5}%cell padding
+\begin{tabular}{ | c | c | c | c | >{\centering\arraybackslash}p{2.282cm} |}
+    \hline
+    \textbf{Denumire} & \textbf{Perioada} & \textbf{Experien\cb{t}\u{a}} & \textbf{Competen\cb{t}\u{a}} & \textbf{Tehnologii} \\
+%    & & (ani) & & \textbf{/ Libr\u{a}rii} \\
+    \hline\hline
+
+    \multicolumn{5}{|l|}{\textbf{Programare web}} \\ \hline
+
+    \textbf{PHP}
+    		& 2005 $\to$ prezent
+    		& 7 ani
+    		& 9
+    		& \footnotesize{\href{http://www.php.net/manual/en/book.mysql.php}{MySQL API}, \href{http://codeigniter.com/}{CodeIgniter}, \href{http://www.fpdf.org/}{FPDF}, \href{http://www.tcpdf.org/}{TCPDF}, \href{http://www.libgd.org/}{GD}}
+    	\\ \hline
+
+    \textbf{MySQL}
+    		& 2005 $\to$ prezent
+    		& 7 ani
+    		& 6
+    		&
+	\\ \hline
+
+    \textbf{HTML}
+    		& 2001 $\to$ prezent
+    		& 11 ani
+    		& 9
+    		&
+	\\ \hline
+
+    \textbf{JavaScript}
+    		& 2001 $\to$ prezent
+    		& 11 ani
+    		& 9
+    		& \href{http://www.w3.org/TR/XMLHttpRequest/}{AJAX}, \href{http://jquery.com/}{jQuery}, \href{http://jqueryui.com/}{jQuery UI}, \href{http://www.trirand.com/blog/}{jqGrid}
+	\\ \hline
+
+    \textbf{CSS}
+    		& 2001 $\to$ prezent
+    		& 11 ani
+    		& 9
+    		& 
+	\\ \hline\hline
+
+
+    \multicolumn{5}{|l|}{\textbf{Programare desktop}} \\ \hline
+
+    \textbf{Java}
+    		& 2009 $\to$ prezent
+    		& 3 ani
+    		& 7
+    		& Swing, \href{http://developer.android.com}{Android}
+	\\ \hline
+
+    \textbf{C++}
+    		& 2006 $\to$ 2009
+    		& 3 ani
+    		& 3
+    		& \href{http://qt.nokia.com/products/}{Qt}
+	\\ \hline
+
+    \textbf{C\#}
+    		& 2009 $\to$ 2010
+    		& 1 ani
+    		& 3
+    		& 
+	\\ \hline
+
+    \textbf{FoxPro}
+    		& 2000 $\to$ 2002
+    		& 2 ani
+    		& 4
+    		& 
+	\\ \hline
+
+    \textbf{Pascal}
+    		& 1999 $\to$ 2001
+    		& 2 ani
+    		& 5
+    		& GUI
+	\\ \hline\hline
+
+
+    \multicolumn{5}{|l|}{\textbf{Alte limbaje}} \\ \hline
+
+    \textbf{Adobe Flash}
+    		& 2006 $\to$ 2011
+    		& 5 ani
+    		& 9
+    		& \href{http://www.adobe.com/products/air.html}{AIR}
+	\\ \hline
+
+    \textbf{Adobe Flex}
+    		& 2007 $\to$ 2011
+    		& 4 ani
+    		& 9
+    		& \href{http://www.adobe.com/products/air.html}{AIR}, \href{http://www.red5.org/}{red5}, \href{http://blog.papervision3d.org/}{Papervision3D}
+	\\ \hline
+
+    \textbf{Mathcad}
+    		& 2010 $\to$ 2012
+    		& 2 ani
+    		& 7
+    		& 
+	\\ \hline
+
+    \textbf{Sage math}
+    		& 2011 $\to$ prezent
+    		& 1 ani
+    		& 8
+    		& 
+	\\ \hline
+
+    \LaTeX{}
+    		& 2011 $\to$ prezent
+    		& 1 ani
+    		& 8
+    		& 
+	\\ \hline \hline
+
+
+    \multicolumn{5}{|l|}{\textbf{Sisteme de operare}} \\ \hline
+
+    \textbf{\hspace{-0.20cm} Red Hat Linux \hspace{-0.20cm}}
+    		& 2001 $\to$ 2004
+    		& 3 ani
+    		& 6
+    		& 
+	\\ \hline
+
+    \textbf{Fedora}
+    		& 2004 $\to$ 2010
+    		& 6 ani
+    		& 6
+    		& 
+	\\ \hline
+
+    \textbf{Ubuntu}
+    		& 2011 $\to$ prezent
+    		& 1 ani
+    		& 6
+    		& \footnotesize{sistem de operare principal}
+	\\ \hline
+
+    \textbf{Windows}
+    		& 2000 $\to$ prezent
+    		& 12 ani
+    		& 9
+    		& \footnotesize{3.1; 95; 98; Me; XP; Vista; 7}
+	\\ \hline \hline
+
+
+    \multicolumn{5}{|p{11cm}|}{\textbf{Alte limbaje \cb{s}i softuri folosite}:}\\
+    \multicolumn{5}{|p{11cm}|}{
+    		Prolog
+    		, Assembly
+    		, \href{http://office.microsoft.com/en-us/access/}{Microsoft Access}
+    		, \href{http://www.blender.org/}{Blender}
+    		, \href{http://audacity.sourceforge.net/}{Audacity}
+    		, \href{http://www.openoffice.org/}{OpenOf\mbox{}f\mbox{}ice}
+    		, \href{http://inkscape.org/}{Inkscape}
+%    		, \href{}{}
+    		, \href{https://www.virtualbox.org/}{VirtualBox}
+	}\\ \hline
+
+    
+% AJUTOR PT CAND AM INCEPUT PROGRAMAREA
+%---------------------------------------
+% 97  98  99  00  01  02  03 % AN CALENDARISTIC
+%  6   7   8   9  10  11  12 % ANII MEI
+%    1   2   3   4   5   6   % CLASA SCOLARA
+    
+\end{tabular}
+
+%\renewcommand{\labelenumiii}{\alph{enumiii}. }
+%\begin{enumerate}
+%
+%	\item \textbf{Programare web}
+%		\begin{enumerate}[label*=\arabic*.] % for 1.1. enumerating
+%
+%			\item \textbf{PHP}
+%				\begin{enumerate}
+%					\item Perioada: \textit{2005 $\to$ prezent}
+%					\item Experien\cb{t}\u{a}: \textit{7 ani}
+%					\item Competen\cb{t}\u{a}: \textit{10}
+%					\item Libr\u{a}rii \cb{s}i extensii: \textit{\href{http://www.php.net/manual/en/book.mysql.php}{MySQL}, \href{http://codeigniter.com/}{CodeIgniter}, \href{http://www.fpdf.org/}{FPDF}, \href{http://www.tcpdf.org/}{TCPDF}, \href{http://www.libgd.org/}{GD}}
+%				\end{enumerate}
+%
+%			\item \textbf{MySQL}
+%				\begin{enumerate}
+%					\item Perioada: \textit{2005 $\to$ prezent}
+%					\item Experien\cb{t}\u{a}: \textit{7 ani}
+%					\item Competen\cb{t}\u{a}: \textit{5}
+%				\end{enumerate}
+%
+%			\item \textbf{HTML}
+%				\begin{enumerate}
+%					\item Perioada: \textit{2001 $\to$ prezent}
+%					\item Experien\cb{t}\u{a}: \textit{11 ani}
+%					\item Competen\cb{t}\u{a}: \textit{9}
+%				\end{enumerate}
+%
+%			\item \textbf{JavaScript}
+%				\begin{enumerate}
+%					\item Perioada: \textit{2001 $\to$ prezent}
+%					\item Experien\cb{t}\u{a}: \textit{11 ani}
+%					\item Competen\cb{t}\u{a}: \textit{8}
+%					\item Libr\u{a}rii \cb{s}i tehnologii: \href{http://www.w3.org/TR/XMLHttpRequest/}{AJAX}, \textit{\href{http://jquery.com/}{jQuery}, \href{http://jqueryui.com/}{jQuery UI}, \href{http://www.trirand.com/blog/}{jqGrid}}
+%				\end{enumerate}
+%
+%			\item \textbf{CSS}
+%				\begin{enumerate}
+%					\item Perioada: \textit{2001 $\to$ prezent}
+%					\item Experien\cb{t}\u{a}: \textit{11 ani}
+%					\item Competen\cb{t}\u{a}: \textit{8}
+%				\end{enumerate}
+%
+%		\end{enumerate}
+%
+%\end{enumerate}
+}
+
+
+\end{europecv}
+\end{document}

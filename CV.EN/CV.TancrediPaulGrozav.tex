@@ -13,6 +13,8 @@
 \usepackage{amssymb}%for mathbb
 
 \renewcommand{\ttdefault}{phv}
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 % PDF Properties
 \hypersetup{
@@ -34,7 +36,7 @@
 \ecvname{Tancredi-Paul Grozav}
 \ecvnationality{Romanian}
 \ecvaddress{17, Vasile Milea, Arad, Romania}
-\ecvtelephone{Mobile: +40 771 179 512}
+\ecvtelephone{Mobile: 0040 771 179 512}
 \ecvemail{\href{mailto:paul@grozav.info}{paul@grozav.info}}
 \ecvdateofbirth{11.06.1991}
 \ecvgender{Male}
@@ -101,6 +103,16 @@
 \ecvpersonalinfo
 \ecvitemspace
 \ecvitem{Website}{\url{http://paul.grozav.info}}
+
+
+%==================================
+% WORK EXPERIENCE
+%==================================
+\ecvsection{Work Experience}
+\ecvitem{Dates}{2012 $\to$ present}
+\ecvitem{Position held}{Software Developer}
+\ecvitem{Main activities and reposnabilites}{Develop C++ software, Linux scripts and maintaining servers}
+\ecvitem{Name of employer}{S.C. Antaco Rom\^{a}nia S.R.L.}
 
 %==================================
 % EDUCATIE SI FORMARE
@@ -173,36 +185,43 @@
 
     \textbf{PHP}
     		& 2005 $\to$ now
-    		& 7 years
+    		& 10 years
     		& 9
     		& \footnotesize{\href{http://www.php.net/manual/en/book.mysql.php}{MySQL API}, \href{http://codeigniter.com/}{CodeIgniter}, \href{http://www.fpdf.org/}{FPDF}, \href{http://www.tcpdf.org/}{TCPDF}, \href{http://www.libgd.org/}{GD}}
     	\\ \hline
 
+    \textbf{ZendFramework}
+		& 2014 $\to$ now
+		& 1 year
+		& 3
+		&
+	\\ \hline
+
     \textbf{MySQL}
     		& 2005 $\to$ now
-    		& 7 years
-    		& 6
+    		& 10 years
+    		& 7
     		&
 	\\ \hline
 
     \textbf{HTML}
     		& 2001 $\to$ now
-    		& 11 years
+    		& 14 years
     		& 9
     		&
 	\\ \hline
 
     \textbf{JavaScript}
     		& 2001 $\to$ now
-    		& 11 years
-    		& 9
-    		& \href{http://www.w3.org/TR/XMLHttpRequest/}{AJAX}, \href{http://jquery.com/}{jQuery}, \href{http://jqueryui.com/}{jQuery UI}, \href{http://www.trirand.com/blog/}{jqGrid}
+    		& 14 years
+    		& 8
+    		& \href{http://www.w3.org/TR/XMLHttpRequest/}{AJAX}, \href{http://jquery.com/}{jQuery}, \href{http://jqueryui.com/}{jQuery UI}, \href{http://www.trirand.com/blog/}{jqGrid}, \href{http://qooxdoo.org/}{qooxdoo}
 	\\ \hline
 
     \textbf{CSS}
     		& 2001 $\to$ now
-    		& 11 years
-    		& 9
+    		& 14 years
+    		& 8
     		& 
 	\\ \hline\hline
 
@@ -210,16 +229,16 @@
     \multicolumn{5}{|l|}{\textbf{Desktop programming}} \\ \hline
 
     \textbf{Java}
-    		& 2009 $\to$ now
-    		& 3 years
+    		& 2009 $\to$ 2013
+    		& 4 years
     		& 7
     		& Swing, \href{http://developer.android.com}{Android}
 	\\ \hline
 
     \textbf{C++}
-    		& 2006 $\to$ 2009
-    		& 3 years
-    		& 3
+    		& \specialcell[t]{2006 $\to$ 2009,\\ 2012 $\to$ now}
+    		& 6 years
+    		& 8
     		& \href{http://qt.nokia.com/products/}{Qt}
 	\\ \hline
 
@@ -270,14 +289,14 @@
 
     \textbf{Sage math}
     		& 2011 $\to$ now
-    		& 1 year
-    		& 8
+    		& 4 year
+    		& 7
     		& 
 	\\ \hline
 
     \LaTeX{}
     		& 2011 $\to$ now
-    		& 1 year
+    		& 4 year
     		& 8
     		& 
 	\\ \hline \hline
@@ -285,10 +304,24 @@
 
     \multicolumn{5}{|l|}{\textbf{Operating systems}} \\ \hline
 
-    \textbf{\hspace{-0.20cm} Red Hat Linux \hspace{-0.20cm}}
-    		& 2001 $\to$ 2004
-    		& 3 years
-    		& 6
+    \textbf{\hspace{-0.2cm} SysAdmin \hspace{-0.20cm}}
+		& 2009 $\to$ now
+		& 6 years
+		& 7
+		& \href{http://httpd.apache.org/}{Apache}, \href{http://www.mysql.com/}{MySQL}, \href{https://www.kernel.org/}{Linux}, \href{https://www.isc.org/downloads/bind/}{Bind}, \href{http://www.postfix.org/}{postfix}, \href{http://www.dovecot.org/}{dovecot}, Bash scripts
+	\\ \hline
+
+    \textbf{\hspace{-0.20cm} Debian \hspace{-0.20cm}}
+		& 2013 $\to$ now
+		& 2 years
+		& 8
+		& \footnotesize{Operating system on my computer}
+	\\ \hline
+
+    \textbf{\hspace{-0.20cm} Red Hat Linux / CentOS \hspace{-0.20cm}}
+    		& \specialcell[t]{2001 $\to$ 2004,\\ 2012 $\to$ now}
+    		& 6 years
+    		& 7
     		& 
 	\\ \hline
 
@@ -300,17 +333,17 @@
 	\\ \hline
 
     \textbf{Ubuntu}
-    		& 2011 $\to$ now
-    		& 1 year
+    		& 2011 $\to$ 2013
+    		& 2 year
     		& 6
-    		& \footnotesize{Main operating system on my computer}
+    		&
 	\\ \hline
 
     \textbf{Windows}
     		& 2000 $\to$ now
-    		& 12 years
+    		& 15 years
     		& 9
-    		& \footnotesize{3.1; 95; 98; Me; XP; Vista; 7}
+    		& \footnotesize{3.1; 95; 98; Me; XP; Vista; 7; 8}
 	\\ \hline \hline
 
 
@@ -325,6 +358,9 @@
     		, \href{http://inkscape.org/}{Inkscape}
 %    		, \href{}{}
     		, \href{https://www.virtualbox.org/}{VirtualBox}
+    		, \href{http://www.linux-kvm.org}{KVM}
+    		, \href{http://www.asterisk.org/}{Asterisk}
+    		, \href{http://git-scm.com/}{git}
 	}\\ \hline
 
     

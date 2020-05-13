@@ -1,0 +1,17 @@
+# ============================================================================ #
+# Author: Tancredi-Paul Grozav <paul@grozav.info>
+# ============================================================================ #
+compile:
+  image: docker.io/debian:11.5
+  stage: build
+  script:
+    - ./manage.sh --install-requirements
+    - pdflatex -v
+    - ls -l $(find . -type f -not -path "./.git/*")
+    - ./manage.sh --compile
+  artifacts:
+    paths:
+    - ro/cv.pdf
+    - en/cv.pdf
+    expire_in: 1 day
+# ============================================================================ #

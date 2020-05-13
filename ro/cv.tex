@@ -2,16 +2,16 @@
 % Author: Tancredi-Paul Grozav <paul@grozav.info>
 % Requirements: texlive-lang-european for babel romanian
 % =============================================================================
-\documentclass[utf8x,helvetica,narrow,english,logo,totpages]{europecv}
+\documentclass[utf8x,helvetica,narrow,romanian,logo,totpages]{europecv}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{hyperref}
 \usepackage{graphicx}
-%\usepackage{babel}
+\usepackage[romanian]{babel}
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=1.27cm,bmargin=2cm,lmargin=1cm,rmargin=77pt}
 \usepackage{microtype}
-%\usepackage{combelow}%for diacritics
+\usepackage{combelow}%for diacritics
 \usepackage{enumitem}%to set enumerate style 1. 1.4.
 \usepackage{array}%for tables, vertical align: middle
 \usepackage{amssymb}%for mathbb
@@ -23,7 +23,7 @@
 % PDF Properties
 \hypersetup{
     colorlinks=true,%coloreaza scrisul linkurilor sau lasa bordura
-%    pdfborder={0 0 0},% scoate bordura rosie din jurul linkurilor
+%   pdfborder={0 0 0},% scoate bordura rosie din jurul linkurilor
     unicode=true,
     pdfstartview={FitH},
     pdftitle={Curriculum Vitae Tancredi-Paul Grozav},
@@ -38,13 +38,13 @@
 
 % Personal Info 
 \ecvname{Tancredi-Paul Grozav}
-\ecvnationality{Romanian}
-\ecvaddress{14-16, Iustin Mar\cb{s}ieu, Arad, Romania}
-\ecvtelephone{Mobile: 0040 771 179 512}
+\ecvnationality{Rom\^{a}n\u{a}}
+\ecvaddress{Str.Iustin Mar\cb{s}ieu nr.14-16 bl.B sc.A ap.42, cod po\cb{s}tal 310150}
+\ecvtelephone{Mobil: 0040 771 179 512}
 \ecvemail{\href{mailto:paul@grozav.info}{paul@grozav.info}}
 \ecvdateofbirth{11.06.1991}
-\ecvgender{Male}
-\ecvpicture[width=90px]{eu.jpg}
+\ecvgender{Masculin}
+\ecvpicture[width=90px]{../common/eu.jpg}
 \ecvbeforepicture{\ecvspace{-2.7cm}\centering}
 \ecvafterpicture{\ecvspace{-1.5cm}}
 
@@ -53,34 +53,34 @@
 %===========================================
 % Changes to personal info constant labels
 %===========================================
-\def\ecv@infosectionkey{\ecv@utf{Personal information}}
-\def\ecv@namekey{\ecv@utf{First name(s) / Surname(s)}}
-\def\ecv@addresskey{\ecv@utf{Address(es)}}
-\def\ecv@telkey{\ecv@utf{Telephone(s)}}
+\def\ecv@infosectionkey{\ecv@utf{Informa\cb{t}ii personale}}
+\def\ecv@namekey{\ecv@utf{Prenume \cb{s}i nume}}
+\def\ecv@addresskey{\ecv@utf{Adres\u{a}(e)}}
+\def\ecv@telkey{\ecv@utf{Telefon(oane)}}
 %\def\ecv@mobilekey{\ecv@utf{Mobil}}
-\def\ecv@emailkey{\ecv@utf{E-mail}}
-\def\ecv@nationalitykey{\ecv@utf{Nationality}}
-\def\ecv@birthkey{\ecv@utf{Date of birth}}
-\def\ecv@genderkey{\ecv@utf{Gender}}
+\def\ecv@emailkey{\ecv@utf{E-mail(uri)}}
+\def\ecv@nationalitykey{\ecv@utf{Na\cb{t}ionalitate(-t\u{a}\cb{t}i)}}
+\def\ecv@birthkey{\ecv@utf{Data na\cb{s}terii}}
+\def\ecv@genderkey{\ecv@utf{Sex}}
 
 %===========================================
 % Changes to spoken language table
 %===========================================
 % Language table
-\def\ecv@mothertonguekey{\ecv@utf{Mother tongue(s)}}
-\def\ecv@assesskey{\ecv@utf{Self-assessment}}
-\def\ecv@levelkey{\ecv@utf{European level}}
-\def\ecv@understandkey{\ecv@utf{Understanding}}
-\def\ecv@speakkey{\ecv@utf{Speaking}}
-\def\ecv@writekey{\ecv@utf{Writing}}
-\def\ecv@listenkey{\ecv@utf{Listening}}
-\def\ecv@readkey{\ecv@utf{Reading}}
-\def\ecv@interactkey{\ecv@utf{Spoken interaction}}
-\def\ecv@productkey{\ecv@utf{Spoken production}}
-\def\ecv@langfooterkey{\ecv@utf{Common European Framework of Reference for Languages}}
-\def\ecv@cefbasickey{\ecv@utf{Basic user}}
-\def\ecv@cefindepkey{\ecv@utf{Independent user}}
-\def\ecv@cefprofkey{\ecv@utf{Proficient user}}
+\def\ecv@mothertonguekey{\ecv@utf{Limba(i) matern{\u a}(e)}}
+\def\ecv@assesskey{\ecv@utf{Autoevaluare}}
+\def\ecv@levelkey{\ecv@utf{Nivel european}}
+\def\ecv@understandkey{\ecv@utf{\^{I}n\cb{t}elegere}}
+\def\ecv@speakkey{\ecv@utf{Vorbire}}
+\def\ecv@writekey{\ecv@utf{Scriere}}
+\def\ecv@listenkey{\ecv@utf{Ascultare}}
+\def\ecv@readkey{\ecv@utf{Citire}}
+\def\ecv@interactkey{\ecv@utf{Participare la conversa\cb{t}ie}}
+\def\ecv@productkey{\ecv@utf{Discurs oral}}
+\def\ecv@langfooterkey{\ecv@utf{Cadrul European Comun de Referin\cb{t}\u{a} pentru Limbi Str\u{a}ine}}
+\def\ecv@cefbasickey{\ecv@utf{Utilizator elementar}}
+\def\ecv@cefindepkey{\ecv@utf{Utilizator independent}}
+\def\ecv@cefprofkey{\ecv@utf{Utilizator experimentat}}
    
 \makeatother
 
@@ -112,206 +112,224 @@
 %==================================
 % WORK EXPERIENCE
 %==================================
-\ecvsection{Work Experience}
-\ecvitem{Dates}{2012 $\to$ present}
-\ecvitem{Position held}{Team Leader, Software Developer, System Administrator}
-\ecvitem{Main activities and reposnabilites}{Develop C++ software, Linux scripts and maintaining servers}
-\ecvitem{Name of employer}{S.C. Antaco Rom\^{a}nia S.R.L.}
+\ecvsection{Experien\cb{t}\u{a} profesional\u{a}}
+\ecvitem{Perioada}{2012 $\to$ prezent}
+\ecvitem{Pozi\cb{t}ia ocupat\u{a}}{Team Leader, Software Developer, System Administrator}
+\ecvitem{Principalele activit\u{a}\cb{t}i \cb{s}i responsabilit\u{a}\cb{t}i}{Dezvoltare de software folosind limbajul C++, scripturi Linux \cb{s}i \^{i}ntre\cb{t}inerea serverelor}
+\ecvitem{Numele angajatorului}{S.C. Antaco Rom\^{a}nia S.R.L.}
 
 %==================================
 % EDUCATIE SI FORMARE
 %==================================
-\ecvsection{Education and training}
-\ecvitem{Dates}{2009 $\to$ 2012}
-\ecvitem{Title of qualification awarded}{Mathematician / Bachelor's degree}
-\ecvitem{Name and type of organisation providing education and training}{\ROQuotes{Aurel Vlaicu} University of Arad}
-\ecvitem{}{Faculty of Exact Sciences, mathematics informatics program}
+\ecvsection{Educa\cb{t}ie \cb{s}i formare}
+\ecvitem{Perioada}{2009 $\to$ 2012}
+\ecvitem{Titlul / diploma ob\cb{t}inut\u{a}}{Matematician / diplom\u{a} de licen\cb{t}\u{a}}
+\ecvitem{Numele institu\cb{t}iei de \^{i}nv\u{a}\cb{t}\u{a}m\^{a}nt}{Universitatea \ROQuotes{Aurel Vlaicu} din Arad}
+\ecvitem{}{Facultatea de \cb{S}tiin\cb{t}e Exacte, specializarea Matematic\u{a}-Informatic\u{a}}
 %\ecvitemspace
-\ecvitem{Principal subjects / occupational skills covered}{
-\begin{tabular}{| >{\centering\arraybackslash}p{5cm} | >{\centering\arraybackslash}p{5.5cm} |}
+\ecvitem{Discipline principale studiate / competen\cb{t}e profesionale dob\^{a}ndite}{
+\begin{tabular}{| >{\centering\arraybackslash}p{5cm} | >{\centering\arraybackslash}p{5cm} |}
     \hline
-    \textbf{Informatics} & \textbf{Mathematics} \\ \hline
+    \textbf{Informatic\u{a}} & \textbf{Matematic\u{a}} \\ \hline
     \vspace{-0.25cm}
+    \small
     \begin{itemize}[label={--}]
-        \item Computing system architectures
-        \item Data structures
-        \item Operating systems
-        \item Algorithms and programming
-        \item Computer networks
-        \item Object oriented programming
-        \item Databases
-        \item Web technologies
+        \item Arhitectura calculatoarelor
+        \item Structuri de date
+        \item Sisteme de operare
+        \item Algoritmi \cb{s}i programare
+        \item Re\cb{t}ele de calculatoare
+        \item Programare orientat\u{a} pe obiecte
+        \item Baze de date
+        \item Tehnologii web
     \end{itemize}
     &
     \vspace{-0.25cm}
+    \small
     \begin{itemize}[label={--}]
-        \item Mathematical analysis on $\mathbb{R}^n$
-        \item Functional analysis
-        \item Complex analysis
-        \item Equations with partial derivatives
-        \item Differential geometry
-        \item Mathematical statistics 
-        \item Topological linear spaces
-        \item Dynamical systems
+        \item Analiz\u{a} matematic\u{a} pe $\mathbb{R}^n$
+        \item Analiz\u{a} func\cb{t}ional\u{a}
+        \item Analiz\u{a} complex\u{a}
+        \item Ecua\cb{t}ii cu derivate par\cb{t}iale
+        \item Geometrie diferen\cb{t}ial\u{a}
+        \item Statistic\u{a} matematic\u{a}
+        \item Spa\cb{t}ii liniare topologice
+        \item Sisteme dinamice
     \end{itemize}
     \\ \hline
 \end{tabular}
 }
-\ecvitem{Average grade over the years}{9,82}
-%\ecvitem{Nota examenului de licen\cb{t}\u{a}}{10 (zece)}
+\ecvitem{Media notelor de peste ani}{9,82 (nou\u{a}, opt zeci \cb{s}i doi) }
+\ecvitem{Nota examenului de licen\cb{t}\u{a}}{10 (zece)}
+
+\newpage
 
 %=======================================
 % APTITUDINI SI COMPETENTE PERSONALE
 %=======================================
-\ecvsection{Personal skills and competences}
-\ecvmothertongue[10pt]{Romanian}
-\ecvitem{Other language(s)}{}
+\ecvsection{Aptitudini \cb{s}i competen\cb{t}e personale}
+\ecvmothertongue[10pt]{Rom\^{a}n\u{a}}
+\ecvitem{Limb\u{a}(i) str\u{a}in\u{a}(e) cunoscute}{}
 \ecvlanguageheader{(*)}
-\ecvlanguage{English}{\ecvCOne}{\ecvCOne}{\ecvBTwo}{\ecvCOne}{\ecvBTwo}
-\ecvlanguage{French}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}
+\ecvlanguage{Englez\u{a}}{\ecvCOne}{\ecvCOne}{\ecvBTwo}{\ecvCOne}{\ecvBTwo}
+\ecvlanguage{Francez\u{a}}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}{\ecvAOne}
 \ecvlanguagefooter{(*)}
 
 %=======================================
 % COMPETENTE SI EXPERIENTE PROFESIONALE
 %=======================================
-\ecvsection{Computer skills and competences}
-\ecvitem{}{I gave each competence a degree between 1 and 10. 1 means a suface knowledge, with minimum experience, while 10 means a deep knowledge, with serious experience.
+\ecvsection{Competen\cb{t}e \cb{s}i experien\cb{t}e profesionale}
+\ecvitem{}{Fiec\u{a}rei competen\cb{t}e i se acord\u{a} o not\u{a} \^{i}ntre 1 \cb{s}i 10. 1 \^{i}nseamn\u{a} o cunoa\cb{s}tere de suprafa\cb{t}\u{a}, cu experien\cb{t}\u{a} minim\u{a}, iar 10 \^{i}nseamn\u{a} o cunoa\cb{s}tere profund\u{a}, cu experient\u{a} serioas\u{a}
 \vspace{0.3cm}
 
 \renewcommand{\arraystretch}{1.5}%cell padding
 \begin{tabular}{ | c | c | c | c | >{\centering\arraybackslash}p{2.282cm} |}
     \hline
-    \textbf{Name} & \textbf{Interval} & \textbf{Experience} & \textbf{Competence degree} & \textbf{Technologies} \\
+    \textbf{Denumire} & \textbf{Perioada} & \textbf{Experien\cb{t}\u{a}} & \textbf{Competen\cb{t}\u{a}} & \textbf{Tehnologii} \\
 %    & & (ani) & & \textbf{/ Libr\u{a}rii} \\
     \hline\hline
 
-    \multicolumn{5}{|l|}{\textbf{Web programming}} \\ \hline
+    \multicolumn{5}{|l|}{\textbf{Programare web}} \\ \hline
 
     \textbf{PHP}
-        & 2005 $\to$ now
-        & 12 years
+        & 2005 $\to$ prezent
+        & 12 ani
         & 9
         & \footnotesize{\href{http://www.php.net/manual/en/book.mysql.php}{MySQL API}, \href{http://framework.zend.com/}{ZendFramework}, \href{http://symfony.com/}{Symfony}, \href{http://codeigniter.com/}{CodeIgniter}, \href{http://www.fpdf.org/}{FPDF}, \href{http://www.tcpdf.org/}{TCPDF}, \href{http://www.libgd.org/}{GD}}
     \\ \hline
 
     \textbf{MySQL}
-        & 2005 $\to$ now
-        & 12 years
+        & 2005 $\to$ prezent
+        & 12 ani
         & 7
         &
     \\ \hline
 
     \textbf{HTML}
-        & 2001 $\to$ now
-        & 16 years
+        & 2001 $\to$ prezent
+        & 16 ani
         & 8
         &
     \\ \hline
 
     \textbf{JavaScript}
-        & 2001 $\to$ now
-        & 16 years
+        & 2001 $\to$ prezent
+        & 16 ani
         & 8
-        & \footnotesize{\href{http://www.w3.org/TR/XMLHttpRequest/}{AJAX}, \href{http://jquery.com/}{jQuery}, \href{http://jqueryui.com/}{jQuery UI}, \href{http://www.trirand.com/blog/}{jqGrid}, \href{http://qooxdoo.org/}{qooxdoo}, \href{http://www.gwtproject.org/}{GWT}, \href{https://angularjs.org/}{AngularJS}, \href{https://www.sencha.com/products/gxt/}{Sencha} }
+        & \footnotesize{ \href{http://www.w3.org/TR/XMLHttpRequest/}{AJAX}, \href{http://jquery.com/}{jQuery}, \href{http://jqueryui.com/}{jQuery UI}, \href{http://www.trirand.com/blog/}{jqGrid}, \href{http://qooxdoo.org/}{qooxdoo}, \href{http://www.gwtproject.org/}{GWT}, \href{https://angularjs.org/}{AngularJS}, \href{https://www.sencha.com/products/gxt/}{Sencha} }
     \\ \hline
 
     \textbf{CSS}
-        & 2001 $\to$ now
-        & 16 years
+        & 2001 $\to$ prezent
+        & 16 ani
         & 7
         &
     \\ \hline\hline
 
 
-    \multicolumn{5}{|l|}{\textbf{Desktop programming}} \\ \hline
+    \multicolumn{5}{|l|}{\textbf{Programare desktop}} \\ \hline
 
     \textbf{C++}
-        & \specialcell[t]{2006 $\to$ 2009,\\ 2012 $\to$ now}
-        & 8 years
+        & \specialcell[t]{2006 $\to$ 2009,\\ 2012 $\to$ prezent}
+        & 8 ani
         & 9
         & \href{http://qt.nokia.com/products/}{Qt}, \href{http://www.boost.org/}{boost}, \href{https://github.com/google/googletest/}{Google Test and Mock}
     \\ \hline
 
     \textbf{Java}
         & \specialcell[t]{2009 $\to$ 2013,\\ 2016}
-        & 5 years
+        & 5 ani
         & 7
         & Swing, \href{http://developer.android.com}{Android}
     \\ \hline
 
     \textbf{C\#}
         & 2009 $\to$ 2010
-        & 1 year
+        & 1 ani
         & 3
         &
     \\ \hline
 
     \textbf{FoxPro}
         & 2000 $\to$ 2002
-        & 2 years
+        & 2 ani
         & 4
         &
     \\ \hline
 
     \textbf{Pascal}
         & 1999 $\to$ 2001
-        & 2 years
+        & 2 ani
         & 5
         & GUI
-    \\ \hline\hline
+    \\ \hline
 
-    \multicolumn{5}{|l|}{\textbf{Other programming languages}} \\ \hline
+\end{tabular}
+}
+
+\ecvitem{}{
+\vspace{0.3cm}
+
+\renewcommand{\arraystretch}{1.5}%cell padding
+\begin{tabular}{ | c | c | c | c | >{\centering\arraybackslash}p{2.282cm} |}
+
+    \hline
+    \textbf{Denumire} & \textbf{Perioada} & \textbf{Experien\cb{t}\u{a}} & \textbf{Competen\cb{t}\u{a}} & \textbf{Tehnologii} \\
+%    & & (ani) & & \textbf{/ Libr\u{a}rii} \\
+    \hline\hline
+
+    \multicolumn{5}{|l|}{\textbf{Alte limbaje}} \\ \hline
 
     \textbf{Adobe Flash}
         & 2006 $\to$ 2011
-        & 5 years
+        & 5 ani
         & 9
         & \href{http://www.adobe.com/products/air.html}{AIR}, \href{http://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm}{ActionScript}
     \\ \hline
 
     \textbf{Adobe Flex}
         & 2007 $\to$ 2011
-        & 4 years
+        & 4 ani
         & 9
         & \href{http://www.adobe.com/products/air.html}{AIR}, \href{http://www.red5.org/}{red5}, \href{http://blog.papervision3d.org/}{Papervision3D}
     \\ \hline
 
     \textbf{Mathcad}
         & 2010 $\to$ 2012
-        & 2 years
+        & 2 ani
         & 7
         &
     \\ \hline
 
     \textbf{Sage math}
         & 2011 $\to$ 2015
-        & 4 year
+        & 4 ani
         & 7
         &
     \\ \hline
 
     \LaTeX{}
-        & 2011 $\to$ now
-        & 6 year
+        & 2011 $\to$ prezent
+        & 6 ani
         & 8
         &
     \\ \hline \hline
 
 
-    \multicolumn{5}{|l|}{\textbf{Operating systems}} \\ \hline
+    \multicolumn{5}{|l|}{\textbf{Sisteme de operare}} \\ \hline
 
-    \textbf{\hspace{-0.2cm} SysAdmin \hspace{-0.20cm}}
-        & 2009 $\to$ now
-        & 8 years
+    \textbf{\hspace{-0.20cm} SysAdmin \hspace{-0.20cm}}
+        & 2009 $\to$ prezent
+        & 8 ani
         & 7
         & \footnotesize{\href{http://httpd.apache.org/}{Apache}, \href{http://www.mysql.com/}{MySQL}, \href{https://www.kernel.org/}{Linux}, \href{https://www.isc.org/downloads/bind/}{Bind}, \href{http://www.postfix.org/}{postfix}, \href{http://www.dovecot.org/}{dovecot}, \href{http://www.openssh.com/}{OpenSSH}, \href{http://www.netfilter.org/projects/iptables/index.html}{iptables}, \href{https://www.nagios.org/}{Nagios}, \href{http://munin-monitoring.org/}{Munin}, Bash scripts}
     \\ \hline
 
     \textbf{\hspace{-0.20cm} Debian \hspace{-0.20cm}}
-        & 2013 $\to$ now
-        & 4 years
+        & 2013 $\to$ prezent
+        & 4 ani
         & 8
-        & \footnotesize{Operating system on my computer}
+        & \footnotesize{Sistem de operare pe calculatorul meu}
     \\ \hline
 
     \textbf{\hspace{-0.20cm} OpenBSD \hspace{-0.20cm}}
@@ -322,29 +340,29 @@
     \\ \hline
 
     \textbf{\hspace{-0.20cm} Red Hat Linux / CentOS \hspace{-0.20cm}}
-        & \specialcell[t]{2001 $\to$ 2004,\\ 2012 $\to$ now}
-        & 8 years
+        & \specialcell[t]{2001 $\to$ 2004,\\ 2012 $\to$ prezent}
+        & 8 ani
         & 7
         &
     \\ \hline
 
     \textbf{Fedora}
         & 2004 $\to$ 2010
-        & 6 years
+        & 6 ani
         & 6
         &
     \\ \hline
 
     \textbf{Ubuntu}
         & 2011 $\to$ 2013
-        & 2 year
+        & 2 ani
         & 6
         &
     \\ \hline
 
     \textbf{Windows}
-        & 2000 $\to$ now
-        & 17 years
+        & 2000 $\to$ prezent
+        & 17 ani
         & 9
         & \footnotesize{MS-DOS; 3.1; 95; 98; Me; XP; Vista; 7; 8; 10; Server 2012}
     \\ \hline
@@ -358,16 +376,16 @@
 \end{tabular}
 }
 
-%==========================================
-% Other programming languages and software
-%==========================================
+%=======================================
+% Alte limbaje si softuri folosite
+%=======================================
 \ecvitem{}{
     \vspace{0.3cm}
     \renewcommand{\arraystretch}{1.5}%cell padding
     \begin{tabular}{ | c | c | c | c | >{\centering\arraybackslash}p{2.282cm} |}
         \hline
-        \multicolumn{5}{|p{13cm}|}{\textbf{Other programming languages and software}:}\\
-        \multicolumn{5}{|p{13cm}|}{\footnotesize{
+        \multicolumn{5}{|p{11cm}|}{\footnotesize{\textbf{Alte limbaje \cb{s}i softuri folosite:}}}\\
+        \multicolumn{5}{|p{11cm}|}{\footnotesize{
             Prolog
             , Assembly
             , \href{https://www.python.org/}{Python}

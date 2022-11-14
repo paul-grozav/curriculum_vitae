@@ -53,7 +53,7 @@ function install-requirements()
 function compile()
 {
   file_name="cv" &&
-  for build_path in ro en
+  for build_path in en ro
   do
     echo "Building in ${script_dir}/${build_path}:" &&
     cd ${script_dir}/${build_path} &&

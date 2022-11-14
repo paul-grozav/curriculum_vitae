@@ -11,10 +11,14 @@
 \usepackage{geometry}
 \geometry{verbose,a4paper,tmargin=1.27cm,bmargin=2cm,lmargin=1cm,rmargin=77pt}
 \usepackage{microtype}
-%\usepackage{combelow}%for diacritics
-\usepackage{enumitem}%to set enumerate style 1. 1.4.
-\usepackage{array}%for tables, vertical align: middle
-\usepackage{amssymb}%for mathbb
+%\usepackage{combelow} % for diacritics
+\usepackage{enumitem} % to set enumerate style 1. 1.4.
+\usepackage{array} % for tables, vertical align: middle
+\usepackage{amssymb} % for mathbb
+
+% common text as variable
+\newcommand{\years}{years}
+\newcommand{\present}{present}
 
 \renewcommand{\ttdefault}{phv}
 \newcommand{\specialcell}[2][c]{%
@@ -23,7 +27,7 @@
 % PDF Properties
 \hypersetup{
     colorlinks=true,%coloreaza scrisul linkurilor sau lasa bordura
-%    pdfborder={0 0 0},% scoate bordura rosie din jurul linkurilor
+%   pdfborder={0 0 0},% scoate bordura rosie din jurul linkurilor
     unicode=true,
     pdfstartview={FitH},
     pdftitle={Curriculum Vitae Tancredi-Paul Grozav},
@@ -39,7 +43,7 @@
 % Personal Info 
 \ecvname{Tancredi-Paul Grozav}
 \ecvnationality{Romanian}
-\ecvaddress{14-16, Iustin Mar\cb{s}ieu, Arad, Romania}
+\ecvaddress{14-16, Iustin Mar\cb{s}ieu, Arad, Romania, zip/postal code 310150}
 \ecvtelephone{Mobile: 0040 771 179 512}
 \ecvemail{\href{mailto:paul@grozav.info}{paul@grozav.info}}
 \ecvdateofbirth{11.06.1991}
@@ -127,7 +131,7 @@
 \ecvitem{Name of employer}{S.C. Antaco Rom\^{a}nia S.R.L.}
 
 %==================================
-% EDUCATIE SI FORMARE
+% EDUCATION AND TRAINING
 %==================================
 \ecvsection{Education and training}
 \ecvitem{Dates}{2009 $\to$ 2012}
@@ -168,12 +172,12 @@
 \end{tabular}
 }
 \ecvitem{Average grade over the years}{9,82}
-%\ecvitem{Nota examenului de licen\cb{t}\u{a}}{10 (zece)}
+\ecvitem{Bachelor's degree exam grade}{10}
 
 \newpage
 
 %=======================================
-% APTITUDINI SI COMPETENTE PERSONALE
+% PERSONAL SKILLS AND COMPETENCES
 %=======================================
 \ecvsection{Personal skills and competences}
 \ecvmothertongue[10pt]{Romanian}
@@ -184,7 +188,7 @@
 \ecvlanguagefooter{(*)}
 
 %=======================================
-% COMPETENTE SI EXPERIENTE PROFESIONALE
+% COMPUTER SKILLS AND COMPETENCES
 %=======================================
 \ecvsection{Computer skills and competences}
 \ecvitem{}{I gave each competence a degree between 1 and 10. 1 means a surface knowledge, with minimum experience, while 10 means a deep knowledge, with serious experience.
@@ -193,7 +197,7 @@
 \renewcommand{\arraystretch}{1.5}%cell padding
 \begin{tabular}{ | c | c | c | c | >{\centering\arraybackslash}p{2.282cm} |}
     \hline
-    \textbf{Name} & \textbf{Interval} & \textbf{Experience} & \textbf{Competence degree} & \textbf{Technologies} \\
+    \textbf{Name} & \textbf{Interval} & \textbf{Experience} & \textbf{Competence} & \textbf{Technologies} \\
 %    & & (ani) & & \textbf{/ Libr\u{a}rii} \\
     \hline\hline
 
@@ -253,28 +257,28 @@
 
     \textbf{Java}
         & \specialcell[t]{2009 $\to$ 2013,\\ 2016}
-        & 5 years
+        & 5 \years
         & 7
         & Swing, \href{http://developer.android.com}{Android}
     \\ \hline
 
     \textbf{C\#}
         & 2009 $\to$ 2010
-        & 1 year
+        & 1 \years
         & 3
         &
     \\ \hline
 
     \textbf{FoxPro}
         & 2000 $\to$ 2002
-        & 2 years
+        & 2 \years
         & 4
         &
     \\ \hline
 
     \textbf{Pascal}
         & 1999 $\to$ 2001
-        & 2 years
+        & 2 \years
         & 5
         & GUI
     \\ \hline
@@ -289,7 +293,7 @@
 \begin{tabular}{ | c | c | c | c | >{\centering\arraybackslash}p{2.282cm} |}
 
     \hline
-    \textbf{Name} & \textbf{Interval} & \textbf{Experience} & \textbf{Competence degree} & \textbf{Technologies} \\
+    \textbf{Name} & \textbf{Interval} & \textbf{Experience} & \textbf{Competence} & \textbf{Technologies} \\
 %    & & (ani) & & \textbf{/ Libr\u{a}rii} \\
     \hline\hline
 
@@ -297,35 +301,35 @@
 
     \textbf{Adobe Flash}
         & 2006 $\to$ 2011
-        & 5 years
+        & 5 \years
         & 9
         & \href{http://www.adobe.com/products/air.html}{AIR}, \href{http://help.adobe.com/livedocs/specs/actionscript/3/wwhelp/wwhimpl/js/html/wwhelp.htm}{ActionScript}
     \\ \hline
 
     \textbf{Adobe Flex}
         & 2007 $\to$ 2011
-        & 4 years
+        & 4 \years
         & 9
-        & \href{http://www.adobe.com/products/air.html}{AIR}, \href{http://www.red5.org/}{red5}, \href{http://blog.papervision3d.org/}{Papervision3D}
+        & \href{http://www.adobe.com/products/air.html}{AIR}, \href{http://www.red5.org/}{red5}, \href{https://en.wikipedia.org/wiki/Papervision3D}{Papervision3D}
     \\ \hline
 
     \textbf{Mathcad}
         & 2010 $\to$ 2012
-        & 2 years
+        & 2 \years
         & 7
         &
     \\ \hline
 
     \textbf{Sage math}
         & 2011 $\to$ 2015
-        & 4 year
+        & 4 \years
         & 7
         &
     \\ \hline
 
     \LaTeX{}
-        & 2011 $\to$ now
-        & 6 year
+        & 2011 $\to$ \present
+        & 6 \years
         & 8
         &
     \\ \hline \hline
@@ -370,7 +374,7 @@
 
     \textbf{Fedora}
         & 2004 $\to$ 2010
-        & 6 years
+        & 6 \years
         & 6
         &
     \\ \hline

@@ -59,7 +59,7 @@ function compile()
     cd ${script_dir}/${build_path} &&
     # Attempt to generate .pdf (actually generates other files) and exits with
     # error. But that's fine, because we'll recompile
-    pdflatex -interaction=nonstopmode ${file_name}.tex ;
+    pdflatex -interaction=nonstopmode ${file_name}.tex 1>/dev/null 2>&1 ;
     # Make the table of contents
     # makeindex ${file_name}.idx
     # Make bibliography

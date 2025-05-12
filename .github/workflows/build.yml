@@ -1,0 +1,69 @@
+# ============================================================================ #
+name: Build
+
+# Triggers the workflow on push to the 'main' branch
+on:
+  push:
+    branches:
+    - main
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run
+# in-progress and latest queued. However, do NOT cancel in-progress runs as we
+# want to allow these production deployments to complete.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+
+jobs:
+  # Build job
+  build:
+    # runs-on: self-hosted
+    runs-on: ubuntu-latest # Uses a free GitHub runner
+    container:
+      image: docker.io/debian:11.5
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Build web app
+      run: |
+        ./manage.sh --install-requirements &&
+        pdflatex -v &&
+        ls -l $(find . -type f -not -path "./.git/*") &&
+        ./manage.sh --compile &&
+        mv build ../public &&
+        cd .. &&
+        ls -la public &&
+        find public -type f &&
+        # sed -i 's/_GIT_COMMIT_ID_/'$(echo ${{ github.sha }} | cut -c1-8 )'/g' public/index.html &&
+        # sed -i 's/_GIT_COMMIT_TIMESTAMP_/'"$(date --date="${{ github.event.head_commit.timestamp }}" +"%Y-%m-%dT%H:%M:%S%:z")"'/g' public/index.html &&
+        true
+    - name: Upload static files as artifact
+      id: deployment
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: public
+        retention-days: 1
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest # Uses a free GitHub runner
+    needs: build
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+# ============================================================================ #

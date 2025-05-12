@@ -33,37 +33,37 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
+    # - name: Setup Pages
+    #   uses: actions/configure-pages@v5
     - name: Build web app
       run: |
         ./manage.sh --install-requirements &&
         pdflatex -v &&
         ls -l $(find . -type f -not -path "./.git/*") &&
         ./manage.sh --compile &&
-        mv build ../public &&
-        cd .. &&
-        ls -la public &&
-        find public -type f &&
+        # mv build ../public &&
+        # cd .. &&
+        # ls -la public &&
+        # find public -type f &&
         # sed -i 's/_GIT_COMMIT_ID_/'$(echo ${{ github.sha }} | cut -c1-8 )'/g' public/index.html &&
         # sed -i 's/_GIT_COMMIT_TIMESTAMP_/'"$(date --date="${{ github.event.head_commit.timestamp }}" +"%Y-%m-%dT%H:%M:%S%:z")"'/g' public/index.html &&
         true
-    - name: Upload static files as artifact
-      id: deployment
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: public
-        retention-days: 1
+    # - name: Upload static files as artifact
+    #   id: deployment
+    #   uses: actions/upload-pages-artifact@v3
+    #   with:
+    #     path: public
+    #     retention-days: 1
 
   # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest # Uses a free GitHub runner
-    needs: build
-    steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
-# ============================================================================ #
+#   deploy:
+#     environment:
+#       name: github-pages
+#       url: ${{ steps.deployment.outputs.page_url }}
+#     runs-on: ubuntu-latest # Uses a free GitHub runner
+#     needs: build
+#     steps:
+#     - name: Deploy to GitHub Pages
+#       id: deployment
+#       uses: actions/deploy-pages@v4
+# # ============================================================================ #

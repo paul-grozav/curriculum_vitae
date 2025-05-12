@@ -48,6 +48,26 @@ jobs:
         # sed -i 's/_GIT_COMMIT_ID_/'$(echo ${{ github.sha }} | cut -c1-8 )'/g' public/index.html &&
         # sed -i 's/_GIT_COMMIT_TIMESTAMP_/'"$(date --date="${{ github.event.head_commit.timestamp }}" +"%Y-%m-%dT%H:%M:%S%:z")"'/g' public/index.html &&
         true
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-output
+        # path: build/
+        path: |
+          en/cv.pdf
+          ro/cv.pdf
+
+    - name: Delete old artifacts
+      run: |
+        gh api repos/${{ github.repository }}/actions/artifacts \
+          --paginate \
+          --jq '.artifacts | .[] | select(.name=="build-output") | .id' |
+        grep -v ${{ steps.upload.outputs.artifact-id }} |
+        xargs -I{} gh api --method DELETE repos/${{ github.repository }}/actions/artifacts/{} 
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
     # - name: Upload static files as artifact
     #   id: deployment
     #   uses: actions/upload-pages-artifact@v3
